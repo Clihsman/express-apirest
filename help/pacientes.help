@@ -1,0 +1,42 @@
+<pacientes>
+    <struct name="PacienteStruct" base="json: array" this="json: object">
+        <item name="nrDoc" />
+        <item name="tipoDoc" />
+        <item name="fechaNacimiento" />
+        <item name="genero" />
+        <item name="apellido1" />
+        <item name="apellido2" />
+        <item name="nombre1" />
+        <item name="nombre2" />
+        <item name="email" />
+        <item name="direccion" />
+        <item name="telefono" />
+        <item name="zona" />
+        <item name="ciudad" />
+        <item name="barrio" />
+        <item name="ocupacion" />
+        <item name="nivelEducativo" />
+        <item name="estadoCivil" />
+        <item name="pertenenciaEtica" />
+        <item name="nombreEtnia" />
+        <item name="entidad" />
+        <item name="regimen" />
+        <item name="nivel" />
+        <item name="tipoAfiliacion" />
+        <item name="fallecido" />
+        <item name="fechaDefuncion" />
+    </struct>
+
+    <node 
+        name="GET-PACIENTES"
+        method="GET" 
+        url="https:://[url-server]/api/pacientes"
+        coment="Obtiene la lista de pacientes"
+        returns="JSON_ARRAY"
+        item="struct: PacienteStruct"
+        >
+    </node>
+</pacientes>
+<!--method: GET> https:://[url-server]/api/pacientes/:id <coment: Obtiene un paciente por el Id -->
+
+
